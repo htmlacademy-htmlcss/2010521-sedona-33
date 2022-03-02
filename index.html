@@ -181,6 +181,66 @@
           </div> 
         </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search-hotels">
+          <h2 class="modal-title title-m">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group date-form-check">
+                <label class="form-label" for="check-in-date">Дата заезда:</label>
+                <input class="field-date" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+                <button class="button-calendar">
+                  <span class="visually-hidden">Календарь</span>
+                </button>
+                <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="field-group date-form-check">
+                <label class="form-label" for="check-out-date">Дата выезда</label>
+                <input class="field-date" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2021">
+                <button class="button-calendar">
+                  <span class="visually-hidden">Календарь</span>
+                </button>
+                <span class="message message-info">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <div class="wrapper-field-group">
+                <div class="field-group date-form-check">
+                  <label class="form-label" for="number-of-guests">Взрослые:</label>
+                  <div class="form-counter-wrapper"> 
+                    <button class="button-counter button-minus">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="field-guests" type="text" id="number-of-guests" name="number-of-guests" placeholder="2">
+                    <button class="button-counter button-plus">
+                      <span class="visually-hidden">Плюс</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="field-group date-form-check">
+                  <label class="form-label label-children" for="number-of-children">Дети:</label>
+                  <div class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Информация</span>
+                    </button>
+                    <span class="tooltip-text role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
+                  <div class="form-counter-wrapper"> 
+                    <button class="button-counter button-minus" type="button">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="field-guests" type="text" id="number-of-guests" name="number-of-guests" placeholder="1">
+                    <button class="button-counter button-plus" type="button">
+                      <span class="visually-hidden">Плюс</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="button button-large button-blue" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
     </div>
   </body>
 </html>
